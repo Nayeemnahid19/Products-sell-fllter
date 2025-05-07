@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop your favorite clothing, jackets, and more!">
+  <meta name="keywords" content="clothing, jackets, fashion, ecommerce">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Nahid Products</title>
+</head>
+<body class="body active">
+<!-- Header Section -->
+  <header>
+    <div class="header-content">
+      <h1>Your Logo</h1>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+      </nav>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover Your Style</h1>
+      <p>Shop the latest trends in fashion and find your perfect outfit today.</p>
+      <button class="cta-btn">Shop Now</button>
+    </div>
+  </section> 
+
+
+<!-- main part er container suru hoilo ei container er moddei sob ache { Section,{}}-->
+  <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+
+    <section class="section collection-section color-background-1">
+
+      <div class="container">                                                                                                                                       <!--1CONTAINER-->
+
+        <div class="collection-wrapper">                                                                                                          <!--2--collection-warpper->-->-
+
+          <div class="collection-filter">                                                                                                        <!--2.1A----collection-filter-->
+          
+            <input type="hidden" class="collection_name" value="all"><h6 class="filter-sidebar-heading">Filter</h6><span class="filter-window-close-btn"></span>
+
+            <div class="filter-box">                                                                                                     <!-- 2.1A.1   filter-box suru-->
+
+              <!-- <h6 class="filter-sidebar-heading mobile-filter-heading"> Filter <span class="filter-close-btn"> <i class="fa-solid fa-xmark"></i> </span> </h6> -->
+              <!-- filter likha , close btn mark btn besic likha-->
+
+              <div class="filter-accordion">                                                                                         <!--2.1A.1A filter-accordion-suru-->
+
+               <div class="filter-accordion-items">                                                                     <!-- 2.1A.1A 1 filter-accordion-items suru-->
+
+                  <div class="filter-accordion-item active">                                                <!-- 2.1A.1A 1A filter-accordion-item active---->
+                    <div class="item-title-wrapper accordion-toggle-btn">           <!-- item-title-wrapper accordion-toggle-btn --> 
+                      <h6 class="item-title">Categories</h6>
+                      <span class="icon">
+                        <span class="plus-icon">
+                          <i class="fa-solid fa-plus"></i>
+                        </span>
+                        <span class="minus-icon">
+                          <i class="fa-solid fa-minus">
+                          </i>
+                        </span>
+                      </span>
+                    </div>                                                          <!-- item-title-wrapper accordion-toggle-btn --> 
+
+                    <div class="filter-accordion-item-content">                     <!--filter-accordion-item-content-->
+
+                      <div class="filter-options-wrapper">          <!--filter-options-wrappert-->
+
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="clothing" value="aa-1" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-1">
+                            <label for="filter-categories-1" class="filter_item_label">Clothing</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="coats-jackets" value="aa-1-10-2" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-2">
+                            <label for="filter-categories-2" class="filter_item_label">Coats & Jackets</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="hoodies" value="aa-1-13-13" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-3">
+                            <label for="filter-categories-3" class="filter_item_label">Hoodies</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="joggers" value="aa-1-1-1-1" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-4" >
+                            <label for="filter-categories-4" class="filter_item_label active">Joggers</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="outfit-sets" value="aa-1-11" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-5">
+                            <label for="filter-categories-5" class="filter_item_label">Outfit Sets</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="pants" value="aa-1-12" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-6">
+                            <label for="filter-categories-6" class="filter_item_label">Pants</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="polos" value="aa-1-13-6" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-7">
+                            <label for="filter-categories-7" class="filter_item_label">Polos</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="shirts" value="aa-1-13-7" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-8">
+                            <label for="filter-categories-8" class="filter_item_label">Shirts</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="shorts" value="aa-1-14" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-9">
+                            <label for="filter-categories-9" class="filter_item_label">Shorts</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="sweatshirts" value="aa-1-13-14" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-10">
+                            <label for="filter-categories-10" class="filter_item_label">Sweatshirts</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="t-shirts" value="aa-1-13-8" onclick="filterCheck()" data-option="filter.p.t.category" id="filter-categories-11">
+                            <label for="filter-categories-11" class="filter_item_label">T-Shirts</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                      </div>                                        <!--filter-options-wrappert-->
+
+                    </div>                                                          <!--filter-accordion-item-content-->
+                  </div>                                                                                    <!-- 2.1A.1A 1A filter-accordion-item active- ses--->
+
+
+                  <div class="filter-accordion-item active">                                                <!--2.1A.1A 1A filter-accordion-item active---->
+                    <div class="item-title-wrapper accordion-toggle-btn">           <!-- item-title-wrapper accordion-toggle-btn --> 
+                      <h6 class="item-title">Size</h6>
+                      <span class="icon">
+                        <span class="plus-icon">
+                          <i class="fa-solid fa-plus"></i>
+                        </span>
+                        <span class="minus-icon">
+                          <i class="fa-solid fa-minus"></i>
+                        </span>
+                      </span>
+                    </div>                                                          <!-- item-title-wrapper accordion-toggle-btn --> 
+
+                    <div class="filter-accordion-item-content">                     <!--filter-accordion-item-content-->
+
+                      <div class="filter-options-wrapper">          <!--filter-options-wrappert-->
+
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="s" value="S" onclick="filterCheck()" data-option="filter.v.option.size" id="filter-size-1">
+                            <label for="filter-size-1" class="filter_item_label ">S</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="m" value="M" onclick="filterCheck()" data-option="filter.v.option.size" id="filter-size-2">
+                            <label for="filter-size-2" class="filter_item_label ">M</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="l" value="L" onclick="filterCheck()" data-option="filter.v.option.size" id="filter-size-3">
+                            <label for="filter-size-3" class="filter_item_label ">L</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="xl" value="XL" onclick="filterCheck()" data-option="filter.v.option.size" id="filter-size-4">
+                            <label for="filter-size-4" class="filter_item_label ">XL</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="xxl" value="XXL" onclick="filterCheck()" data-option="filter.v.option.size" id="filter-size-5">
+                            <label for="filter-size-5" class="filter_item_label ">XXL</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+
+                      </div>                                        <!--filter-options-wrappert-->
+
+                    </div>                                                          <!--filter-accordion-item-content-->
+                  </div>                                                                                    <!--2.1A.1A 1Afilter-accordion-item active- ses--->
+
+
+                  <div class="filter-accordion-item active">                                                 <!--2.1A.1A 1A filter-accordion-item active---->
+
+                    <div class="item-title-wrapper accordion-toggle-btn">           <!-- item-title-wrapper accordion-toggle-btn -->
+                      <h6 class="item-title">Availability</h6>
+                      <span class="icon">
+                        <span class="plus-icon">
+                          <i class="fa-solid fa-plus"></i>
+                        </span>
+                        <span class="minus-icon">
+                          <i class="fa-solid fa-minus"></i>
+                        </span>
+                      </span>
+                    </div>                                                          <!-- item-title-wrapper accordion-toggle-btn -->  
+
+                    <div class="filter-accordion-item-content">                     <!--filter-accordion-item-content-->
+                      <div class="filter-options-wrapper">
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="in-stock" value="1" onclick="filterCheck()" data-option="filter.v.availability" id="filter-availability-1">
+                            <label for="filter-availability-1" class="filter_item_label ">In stock</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                        <div class="filter-options">
+                          <div class="filter-option">
+                            <input class="filter-item-checkbox" type="checkbox" name="out-of-stock" value="0" onclick="filterCheck()" data-option="filter.v.availability" id="filter-availability-2">
+                            <label for="filter-availability-2" class="filter_item_label ">Out of stock</label>
+                          </div>
+                          <span class="filter-item-number"></span>
+                        </div>
+                      </div>
+                    </div>                                                          <!--filter-accordion-item-content-->
+
+                  </div>                                                                                     <!--2.1A.1A 1Afilter-accordion-item active-ses--->
+
+                </div>                                                                                                  <!-- 2.1A.1A 1 filter-accordion-items ses-->
+
+              </div>                                                                                                                 <!--2.1A.1A filter-accordion-ses-->
+
+            </div>                                                                                                                       <!-- 2.1A.1   filter-box ses-->
+
+          </div>                                                                                                                                 <!-- 2.1A---collection-filter-->
+
+          <div class="collection-content">                                                                                                       <!--2.1B- collection content er box suru -->
+            <div class="collection-top">                                                                             <!-- collection top er box start -->
+
+              <div class="collection-filter-btn">                                       <!--  collection-filter-btn  start-->
+                <span class="filter-open-btn" aria-label="Open filter options">
+                  <i class="fa-solid fa-filter"></i>
+                  Filter
+                </span>
+                <p class="collection-product-count">50 products</p>
+              </div>                                                                    <!--  collection-filter-btn  start-->
+            
+             <div class="filter-select-field">                                          <!--  featured er part jeta right side top e thakbe -->
+                <select name="sort_by" id="sort_by" class="collection_sort">
+                  <option value="manual">price Range</option>
+                  <option value="all">All</option>
+                  <option value="best-selling">0 - ৳500</option>
+                  <option value="501-1000">৳500 - ৳1000</option>
+                  <option value="1001-1200">৳1000 - ৳1200</option>
+                  <option value="1201-1500">৳1200 - ৳1500</option>
+                  <option value="1501-2000">৳1500 - ৳2000</option>
+                  <option value="2001-2500">৳2000 - ৳2500</option>
+                  <option value="2501-3000">৳2500 - ৳3000</option>
+                </select>
+                <span class="filter-select-field-icon"></span>
+             </div>                                                                     <!--  featured er part jeta right side top e thakbe -->
+            
+              <div class="collection-product-wrap">                                     <!---product er container suruhoilo/collection-product-wrap---->
+                <div class="products item-collections-products">                 <!-- products item-collections-products -->
+
+                  <!-- Product List -->
+                    <div class="product-grid">                            <!-- product-grid etar modde sob product show korbe -->
+                      <!-- Product 1 -->
+                      <div class="product-card">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+1');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Men's Casual Jacket</h3>
+                          <p class="product-description">A stylish and comfortable jacket for everyday wear.</p>
+                          <p class="product-price">৳49.99</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+                      <div class="product-card" 
+                          data-category="hoodies" 
+                          data-size="M,L,XL">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+1');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Men's Hoodie</h3>
+                          <p class="product-description">Comfortable cotton hoodie.</p>
+                          <p class="product-price">৳1,199</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+                      <!-- Product Card Example -->
+                      <div class="product-card" data-category="hoodies">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+1');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Men's Hoodie</h3>
+                          <p class="product-description">Comfortable cotton hoodie.</p>
+                          <p class="product-price">৳1,199</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+                      <!-- Product 1: Men's Hoodie -->
+                        <div class="product-card" data-category="hoodies" data-size="M,L,XL" data-price="1199">
+                          <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+1');"></div>
+                          <div class="product-details">
+                            <h3 class="product-name">Men's Hoodie</h3>
+                            <p class="product-description">Comfortable cotton hoodie.</p>
+                            <p class="product-price">৳1,199</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                          </div>
+                        </div>
+
+                        <!-- Product 2: Women's Hoodie -->
+                        <div class="product-card" data-category="hoodies" data-size="S,M,L" data-price="999">
+                          <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+2');"></div>
+                          <div class="product-details">
+                            <h3 class="product-name">Women's Hoodie</h3>
+                            <p class="product-description">Cozy hoodie for women.</p>
+                            <p class="product-price">৳999</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                          </div>
+                        </div>
+
+                        <!-- Product 3: Men's T-shirt -->
+                        <div class="product-card" data-category="t-shirts" data-size="M,L,XL" data-price="499">
+                          <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+3');"></div>
+                          <div class="product-details">
+                            <h3 class="product-name">Men's T-shirt</h3>
+                            <p class="product-description">Soft and breathable t-shirt for men.</p>
+                            <p class="product-price">৳499</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                          </div>
+                        </div>
+
+                        <!-- Product 4: Classic White T-Shirt -->
+                        <div class="product-card" data-category="t-shirts" data-size="S,M,L" data-price="799">
+                          <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+4');"></div>
+                          <div class="product-details">
+                            <h3 class="product-name">Classic White T-Shirt</h3>
+                            <p class="product-description">A classic white t-shirt for any occasion.</p>
+                            <p class="product-price">৳799</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                          </div>
+                        </div>
+
+                        <!-- Product 5: Men's Casual Jacket -->
+                        <div class="product-card" data-category="t-shirts" data-size="M" data-price="2299">
+                          <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+5');"></div>
+                          <div class="product-details">
+                            <h3 class="product-name">Men's Casual Jacket</h3>
+                            <p class="product-description">Stylish and versatile jacket.</p>
+                            <p class="product-price">৳2,299</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                          </div>
+                        </div>
+
+                        <!-- Product 6: Women's Casual Jacket -->
+                        <div class="product-card" data-category="jackets" data-size="S,M,L" data-price="1999">
+                          <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+6');"></div>
+                          <div class="product-details">
+                            <h3 class="product-name">Women's Casual Jacket</h3>
+                            <p class="product-description">A fashionable jacket for women.</p>
+                            <p class="product-price">৳1,999</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                          </div>
+                        </div>
+
+                        <!-- Product 7: Running Shoes -->
+                        <div class="product-card" data-category="shoes" data-size="7,8,9,10" data-price="1599">
+                          <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+7');"></div>
+                          <div class="product-details">
+                            <h3 class="product-name">Running Shoes</h3>
+                            <p class="product-description">Durable and lightweight shoes for running.</p>
+                            <p class="product-price">৳1,599</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                          </div>
+                        </div>
+
+                        <!-- Product 8: Smartwatch -->
+                        <div class="product-card" data-category="electronics" data-size="one-size" data-price="2499">
+                          <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+8');"></div>
+                          <div class="product-details">
+                            <h3 class="product-name">Smartwatch</h3>
+                            <p class="product-description">Track your fitness and notifications.</p>
+                            <p class="product-price">৳2,499</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                          </div>
+                        </div>
+
+                        <!-- Product 9: Leather Wallet -->
+                        <div class="product-card" data-category="outfit-sets" data-size="one-size" data-price="799">
+                          <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+9');"></div>
+                          <div class="product-details">
+                            <h3 class="product-name">Leather Wallet</h3>
+                            <p class="product-description">A high-quality wallet made of leather.</p>
+                            <p class="product-price">৳799</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                          </div>
+                        </div>
+
+                        <!-- Product 10: Black Leather Boots -->
+                        <div class="product-card" data-category="shoes" data-size="7,8,9,10" data-price="4999">
+                          <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+10');"></div>
+                          <div class="product-details">
+                            <h3 class="product-name">Black Leather Boots</h3>
+                            <p class="product-description">Stylish and durable leather boots.</p>
+                            <p class="product-price">৳4,999</p>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                          </div>
+                        </div>
+
+
+                      <div class="product-card" data-category="t-shirts" data-size="S,M,L">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=T-Shirt');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Classic Cotton T-Shirt</h3>
+                          <p class="product-description">Soft and breathable t-shirt perfect for casual wear.</p>
+                          <p class="product-price">৳3000.00</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div
+
+                      <!-- Product 2 -->
+                      <div class="product-card">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+2');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Women's Hoodie</h3>
+                          <p class="product-description">Perfect for cozy and casual outings.</p>
+                          <p class="product-price">৳39.99</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div> 
+
+                      <!-- Product 3 -->
+                      <div class="product-card">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+3');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Classic White T-Shirt</h3>
+                          <p class="product-description">A comfortable and classic t-shirt for everyday wear.</p>
+                          <p class="product-price">৳19.99</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+
+                      <!-- Product 4 -->
+                      <div class="product-card">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+4');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Slim Fit Chinos</h3>
+                          <p class="product-description">A pair of slim fit chinos for a sleek, modern look.</p>
+                          <p class="product-price">৳39.99</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+
+                      <!-- Product 5 -->
+                      <div class="product-card">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+5');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Leather Wallet</h3>
+                          <p class="product-description">A high-quality leather wallet with plenty of space for cards and cash.</p>
+                          <p class="product-price">৳559.99</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+
+                      <!-- Product 6 -->
+                      <div class="product-card">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+6');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Running Shoes</h3>
+                          <p class="product-description">Comfortable and durable running shoes designed for performance.</p>
+                          <p class="product-price">৳869.99</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+
+                      <!-- Product 7 -->
+                      <div class="product-card">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+7');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Ray-Ban Sunglasses</h3>
+                          <p class="product-description">Stylish sunglasses that offer full UV protection and a timeless design.</p>
+                          <p class="product-price">৳1149.99</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+
+                      <!-- Product 8 -->
+                      <div class="product-card">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+8');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Black Leather Boots</h3>
+                          <p class="product-description">Durable and stylish leather boots perfect for any weather.</p>
+                          <p class="product-price">৳2119.99</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+
+                      <!-- Product 9 -->
+                      <div class="product-card">
+                        <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+9');"></div>
+                        <div class="product-details">
+                          <h3 class="product-name">Smartwatch</h3>
+                          <p class="product-description">Track your fitness and stay connected with this sleek, modern smartwatch.</p>
+                          <p class="product-price">৳2199.99</p>
+                          <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>
+                   
+                    <!-- Product 10 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+10');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Sports Watch</h3>
+                        <p class="product-description">Water-resistant watch with stopwatch and alarm.</p>
+                        <p class="product-price">৳1249</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 11 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+11');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Denim Jeans</h3>
+                        <p class="product-description">Slim fit jeans with stretch fabric for comfort.</p>
+                        <p class="product-price">৳999</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 12 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+12');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Bluetooth Earbuds</h3>
+                        <p class="product-description">Compact and high-quality sound with noise canceling.</p>
+                        <p class="product-price">৳1599</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 13 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+13');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Canvas Backpack</h3>
+                        <p class="product-description">Spacious and durable with multiple compartments.</p>
+                        <p class="product-price">৳1199</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 14 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+14');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Formal Shirt</h3>
+                        <p class="product-description">Elegant button-up shirt suitable for office wear.</p>
+                        <p class="product-price">৳749</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 15 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+15');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Gaming Mouse</h3>
+                        <p class="product-description">Ergonomic design with customizable buttons.</p>
+                        <p class="product-price">৳799</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 16 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+16');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Graphic T-shirt</h3>
+                        <p class="product-description">Bold design printed on soft cotton fabric.</p>
+                        <p class="product-price">৳499</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 17 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+17');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Wireless Charger</h3>
+                        <p class="product-description">Fast charging pad compatible with all devices.</p>
+                        <p class="product-price">৳899</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 18 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+18');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Cotton Polo Shirt</h3>
+                        <p class="product-description">Casual and breathable short-sleeve polo.</p>
+                        <p class="product-price">৳699</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 19 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+19');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Laptop Sleeve</h3>
+                        <p class="product-description">Protective and lightweight cover for 13" laptops.</p>
+                        <p class="product-price">৳599</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 20 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+20');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Water Bottle</h3>
+                        <p class="product-description">BPA-free plastic bottle with 1L capacity.</p>
+                        <p class="product-price">৳199</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 21 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+21');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Office Chair</h3>
+                        <p class="product-description">Ergonomic design with lumbar support.</p>
+                        <p class="product-price">৳3999</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 22 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+22');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Desk Lamp</h3>
+                        <p class="product-description">LED lamp with adjustable brightness and neck.</p>
+                        <p class="product-price">৳899</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 23 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+23');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Power Bank</h3>
+                        <p class="product-description">10,000 mAh portable charger with fast output.</p>
+                        <p class="product-price">৳1299</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 24 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+24');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Fitness Tracker</h3>
+                        <p class="product-description">Track your steps, sleep, and heart rate easily.</p>
+                        <p class="product-price">৳1599</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 25 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+25');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Fleece Blanket</h3>
+                        <p class="product-description">Soft and warm fleece blanket for all seasons.</p>
+                        <p class="product-price">৳699</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 26 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+26');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Cap</h3>
+                        <p class="product-description">Stylish cap for sun protection and fashion.</p>
+                        <p class="product-price">৳349</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 27 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+27');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Tripod Stand</h3>
+                        <p class="product-description">Adjustable height tripod for camera or phone.</p>
+                        <p class="product-price">৳799</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 28 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+28');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Phone Holder</h3>
+                        <p class="product-description">Dashboard mount for phones during driving.</p>
+                        <p class="product-price">৳299</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 29 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+29');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Keychain Set</h3>
+                        <p class="product-description">Set of 3 stylish metal keychains.</p>
+                        <p class="product-price">৳149</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- Product 30 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Product+30');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Handbag</h3>
+                        <p class="product-description">Elegant handbag with spacious compartments.</p>
+                        <p class="product-price">৳1799</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                    <!-- START OF PRODUCT CARDS -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Sneakers');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Sneakers</h3>
+                        <p class="product-description">Comfortable sneakers for everyday walking.</p>
+                        <p class="product-price">৳999.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Sports+Watch');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Sports Watch</h3>
+                        <p class="product-description">Durable watch with stopwatch & timer.</p>
+                        <p class="product-price">৳1199.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Denim+Jeans');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Denim Jeans</h3>
+                        <p class="product-description">Stretchable slim-fit jeans for comfort & style.</p>
+                        <p class="product-price">৳1299.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Backpack');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Travel Backpack</h3>
+                        <p class="product-description">Waterproof & spacious backpack for travel.</p>
+                        <p class="product-price">৳899.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Wallet');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Genuine Leather Wallet</h3>
+                        <p class="product-description">Classic brown wallet with RFID blocking.</p>
+                        <p class="product-price">৳599.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Cap');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Baseball Cap</h3>
+                        <p class="product-description">Adjustable cotton cap for sunny days.</p>
+                        <p class="product-price">৳349.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Formal+Shirt');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Formal Shirt</h3>
+                        <p class="product-description">Perfect for office wear with a crisp look.</p>
+                        <p class="product-price">৳799.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Perfume');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Men's Perfume</h3>
+                        <p class="product-description">Long-lasting fragrance with a bold aroma.</p>
+                        <p class="product-price">৳1049.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Casual+Shoes');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Casual Shoes</h3>
+                        <p class="product-description">Lightweight shoes for daily use.</p>
+                        <p class="product-price">৳1149.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Bluetooth+Speaker');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Bluetooth Speaker</h3>
+                        <p class="product-description">Portable speaker with deep bass.</p>
+                        <p class="product-price">৳1249.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <!-- 10 More for total 20 -->
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Beanie');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Winter Beanie</h3>
+                        <p class="product-description">Keep warm and stylish in winter.</p>
+                        <p class="product-price">৳299.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Sunglasses');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">UV Sunglasses</h3>
+                        <p class="product-description">Protect your eyes in style.</p>
+                        <p class="product-price">৳499.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Tie');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Silk Tie</h3>
+                        <p class="product-description">Elegant tie for formal occasions.</p>
+                        <p class="product-price">৳199.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Leather+Belt');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Leather Belt</h3>
+                        <p class="product-description">Adjustable leather belt for men.</p>
+                        <p class="product-price">৳399.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Watch+Box');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Watch Box</h3>
+                        <p class="product-description">Organize your watches in style.</p>
+                        <p class="product-price">৳699.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Shoes+Cleaner');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Shoe Cleaning Kit</h3>
+                        <p class="product-description">Complete kit to keep shoes looking new.</p>
+                        <p class="product-price">৳249.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Face+Mask');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Face Mask Pack</h3>
+                        <p class="product-description">Pack of 5 reusable cotton masks.</p>
+                        <p class="product-price">৳149.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Laptop+Sleeve');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Laptop Sleeve</h3>
+                        <p class="product-description">Protect your device in style.</p>
+                        <p class="product-price">৳849.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Headphones');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Wired Headphones</h3>
+                        <p class="product-description">Crystal-clear sound for everyday use.</p>
+                        <p class="product-price">৳649.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+
+                    <div class="product-card">
+                      <div class="product-image" style="background-image: url('https://via.placeholder.com/300x300?text=Smart+Charger');"></div>
+                      <div class="product-details">
+                        <h3 class="product-name">Smart USB Charger</h3>
+                        <p class="product-description">Fast charging for multiple devices.</p>
+                        <p class="product-price">৳459.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                      </div>
+                    </div>
+                    <!-- END OF PRODUCT CARDS -->
+
+
+
+ 
+
+
+                    </div>                                                <!-- product-grid etar modde sob product show korbe -->
+  
+                    <!-- Add more product items here -->
+                </div>                                                           <!-- products item-collections-products -->
+              </div>                                                                    <!---product er container sus hoilo/collection-product-wrap---->
+
+            </div>                                                                                                   <!-- collection top er box ses -->
+          </div >                                                                                                                                <!--2.1B- collection content er box ses -->
+
+
+        </div>                                                                                                                                    <!--2-collection-warpper->-->
+
+        </div>                                                                                                                                    <!--2--collection-warpper->-->
+      </div>                                                                                                                                                       <!--1CONTAINER-->
+
+    </section>
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>
